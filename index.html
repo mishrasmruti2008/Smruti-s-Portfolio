@@ -1,124 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Smruti Mishra | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smruti Mishra | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="splash-screen">
+    <div class="greeting-container">
+        <span class="greeting g1">Hii 👋</span>
+        <span class="greeting g2">Hello ✨</span>
+        <span class="greeting g3">Namaste 🙏</span>
+        <span class="greeting g4">Welcome to Smruti's Portfolio 😊</span>
 
-  <!-- Navigation / Theme Switcher Header -->
-  <header class="header-nav">
-    <div class="logo">Smruti Mishra</div>
-    <div class="theme-switcher-container">
-      <button id="light-theme-btn" class="theme-btn active" onclick="setTheme('light')">Light</button>
-      <button id="dark-theme-btn" class="theme-btn" onclick="setTheme('dark')">Dark</button>
     </div>
-  </header>
+</div>
 
-  <main class="container">
-
-    <!-- Hero Section -->
-    <section class="card hero-card">
-      <h1>Smruti Mishra</h1>
-      <p class="subtitle">Computer Science & Engineering Student | Web Developer</p>
-      <p class="bio">
-        Passionate about crafting intuitive, responsive web applications and exploring modern cloud architectures. Skilled in full-stack development, UI design, and cloud fundamentals.
-      </p>
-      <div class="contact-links">
-        <a href="mailto:smruti@example.com" class="btn-link">Email Me</a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-link">GitHub</a>
-      </div>
-    </section>
-
-    <!-- Education Section -->
-    <section class="card">
-      <h2>Education</h2>
-      <div class="education-item">
-        <h3>B.Tech in Computer Science Engineering</h3>
-        <p class="institution">Institute of Technical Education and Research (ITER), Siksha 'O' Anusandhan</p>
-        <p class="duration">2nd Year Student | Cuttack / Bhubaneswar, Odisha</p>
-      </div>
-    </section>
-
-    <!-- Technical Skills Section -->
-    <section class="card">
-      <h2>Technical Skills</h2>
-      
-      <div class="skills-group">
-        <h3>Languages</h3>
-        <div class="tag-container">
-          <span class="tag">HTML5</span>
-          <span class="tag">CSS3</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">Java</span>
-          <span class="tag">Python</span>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Smruti<span>.</span></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-      </div>
+    </nav>
 
-      <div class="skills-group">
-        <h3>Frameworks & Technologies</h3>
-        <div class="tag-container">
-          <span class="tag">React</span>
-          <span class="tag">Next.js</span>
-          <span class="tag">Vite</span>
-          <span class="tag">Tailwind CSS</span>
-          <span class="tag">FastAPI</span>
+    <section class="hero" id="about">
+        <div class="hero-container">
+            <div class="profile-pic-container">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            </div>
+            <div class="hero-text">
+                <h1>Smruti Mishra</h1>
+                <div class="tagline">Driven by curiosity, powered by code.</div>
+                <p>
+                    Hello! I am Smruti, a Computer Science Engineering student passionate about software development and intelligent systems. I spend my time exploring programming in Java, JS, HTML, and CSS while building web applications and hands-on projects. Currently, I am focused on strengthening my core computer science foundations, writing clean code, and preparing to build impactful technology products.
+                </p>
+                <div class="hero-socials">
+                    <a href="https://github.com/mishrasmruti2008" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/smruti-mishra-3209953b2/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:mishrasmruti2008@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="skills-group">
-        <h3>Tools & Cloud Platforms</h3>
-        <div class="tag-container">
-          <span class="tag">Git & GitHub</span>
-          <span class="tag">VS Code</span>
-          <span class="tag">Supabase</span>
-          <span class="tag">AWS (EC2, Auto Scaling)</span>
+    <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-java"></i> Java</div>
+            <div class="skill-card"><i class="fab fa-python"></i> Python</div>
+            <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
+            <div class="skill-card"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="skill-card"><i class="fab fa-css3-alt"></i> CSS3</div>
         </div>
-      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="card">
-      <h2>Projects</h2>
+    <section id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <div>
+                    <h3>Web Application Project</h3>
+                    <p>A responsive web platform built to demonstrate clean layout design, front-end scripting, and interactive UI features.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/mishrasmruti2008" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                </div>
+            </div>
 
-      <div class="project-item">
-        <h3>SkinSense AI</h3>
-        <p class="project-tech">HTML • CSS • JavaScript</p>
-        <p>A multi-module web platform built to assess user skin conditions using interactive tools, custom front-end components, and tailored UI layouts.</p>
-      </div>
+            <div class="project-card">
+                <div>
+                    <h3>Java Core Application</h3>
+                    <p>A console or desktop-based application built in Java focusing on object-oriented programming fundamentals and algorithms.</p>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">OOP</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/mishrasmruti2008" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                </div>
+            </div>
 
-      <div class="project-item">
-        <h3>DoseWise (Prescription Safety Assistant)</h3>
-        <p class="project-tech">React • TypeScript • Vite</p>
-        <p>An explainable antimicrobial stewardship and prescription safety assistant designed to help analyze prescription data and improve clinical safety outcomes.</p>
-      </div>
-
-      <div class="project-item">
-        <h3>Personal Portfolio</h3>
-        <p class="project-tech">HTML • Claymorphic CSS • JavaScript</p>
-        <p>A custom responsive portfolio site showcasing engineering coursework, technical skills, web projects, and interactive dual-theme styling.</p>
-      </div>
+        </div>
     </section>
 
-    <!-- Experience & Internships -->
-    <section class="card">
-      <h2>Experience & Internships</h2>
-      <div class="experience-item">
-        <h3>Software Engineering & AWS Cloud Intern</h3>
-        <p class="institution">CQEMS Internship Program</p>
-        <p>Gaining hands-on practice with AWS Cloud Foundation, cloud compute infrastructure, EC2 virtual servers, and modern software engineering practices.</p>
-      </div>
+    <section id="contact">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-content">
+            <p>I am always open to working on projects, learning new technology, or discussing software opportunities. Feel free to reach out!</p>
+            
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:mishrasmruti2008@gmail.com">mishrasmruti2008@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+918763998511">+91 8763998511</a>
+                </div>
+            </div>
+
+            <div class="contact-buttons">
+                <a href="mailto:mishrasmruti2008@gmail.com" class="btn">Send Email</a>
+                <a href="https://www.linkedin.com/in/smruti-mishra-3209953b2/" target="_blank" class="btn btn-outline">LinkedIn Profile</a>
+            </div>
+        </div>
     </section>
 
-  </main>
+    <footer>
+        <p>&copy; 2026 Smruti Mishra. All rights reserved.</p>
+    </footer>
 
-  <footer>
-    <p>© 2026 Smruti Mishra. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
