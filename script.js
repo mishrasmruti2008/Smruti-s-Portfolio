@@ -1,15 +1,27 @@
+// Theme Toggle Functionality
+function setTheme(themeName) {
+  const lightBtn = document.getElementById('light-theme-btn');
+  const darkBtn = document.getElementById('dark-theme-btn');
 
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
-
-if (hamburger && navLinks) {
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-        });
-    });
+  if (themeName === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    darkBtn.classList.add('active');
+    lightBtn.classList.remove('active');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    document.documentElement.removeAttribute('data-theme');
+    lightBtn.classList.add('active');
+    darkBtn.classList.remove('active');
+    localStorage.setItem('theme', 'light');
+  }
 }
+
+// Preserve Theme Preference Across Reloads
+document.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    setTheme('dark');
+  } else {
+    setTheme('light');
+  }
+});
